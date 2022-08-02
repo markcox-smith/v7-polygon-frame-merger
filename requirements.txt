@@ -1,0 +1,4 @@
+darwin-py==0.7.15
+json==3.10.5
+numpy==1.23.1
+upolygon==0.1.6
