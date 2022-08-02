@@ -3,7 +3,7 @@ A script that merges individual V7 frames of the same annotation class and that 
 
 
 ## Instructions on how to use this
-1. Install locally
+1. Install repo
 
 2. Run merger.py on an exported Darwin json file for which you would like to merge the annotations. The origin file is the `filePath` variable and the target/new file is designated by the `new_path` variable.
 
