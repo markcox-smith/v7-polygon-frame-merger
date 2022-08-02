@@ -5,7 +5,7 @@ import overlap_bool
 
 
 #Opening Export File
-filePath = '/Users/markcox-smith/Documents/Remedy Temp/c8c6d3016fa82f1f49645c650583b150f789fade561907f1c3abc2ead14bf805_0000000_0000001.json'
+filePath = '<Enter your unmerged Darwin JSON path here>'
 
 with open(filePath) as f:    
     data = json.load(f)  
@@ -13,7 +13,7 @@ f.close()
 
 
 #Setting initial parameters
-new_path = 'new_complex_json.json'
+new_path = '<Enter your new file path and file name here>'
 
 new_list = []
 task_list = []
