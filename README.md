@@ -2,7 +2,7 @@
 A script that merges individual V7 frames of the same annotation class and that have an IoU greater than 0
 
 
-#Instructions on how to use this
+# Instructions on how to use this
 1. Install locally
 
 2. Run merger.py on an exported Darwin json file for which you would like to merge the annotations. The origin file is the `filePath` variable and the target/new file is designated by the `new_path` variable.
@@ -10,7 +10,7 @@ A script that merges individual V7 frames of the same annotation class and that 
 3. Uploaded the newly created file to a dataset and file of your choice. Remember to change the filename and dataset to the desired destination within the new JSON file
 
 
-#Notes:
+# Notes:
 
 -Currently only polygons and complex-polygons are merged. Other annotation types are left
 
