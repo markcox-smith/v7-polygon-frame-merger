@@ -11,5 +11,7 @@ A script that merges individual V7 frames of the same annotation class and that 
 
 
 #Notes:
+
 -Currently only polygons and complex-polygons are merged. Other annotation types are left
+
 -Subannotations are not currently supported
