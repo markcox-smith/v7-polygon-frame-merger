@@ -138,8 +138,6 @@ for i in range(len(task_list)):
                         #Prevents sections being included twice if they have already been merged
                         task_list[temp_i + 1]["id"] = "NULL"
 
-                    else:
-                        pass
                 except:
                     try:
                         poly_path = temp_frame_dict[str(last_key(temp_frame_dict))]["complex_polygon"]["path"]
@@ -154,8 +152,6 @@ for i in range(len(task_list)):
                             #Prevents sections being included twice if they have already been merged
                             task_list[temp_i + 1]["id"] = "NULL"
 
-                        else:
-                            pass
                     except:
                         pass
 
