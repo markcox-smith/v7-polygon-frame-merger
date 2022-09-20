@@ -15,7 +15,6 @@ f.close()
 #Setting initial parameters
 new_path = '<Enter your new file path and file name here>'
 
-new_list = []
 task_list = []
 
 previous_keyframe: int
@@ -54,7 +53,6 @@ def name_sort(task_list):
 for task in data['annotations']:
     frame_key = last_key(task['frames'])
     previous_keyframe = frame_key
-    new_list.append([frame_key,task['name']])
     task_list.append(task)
 
 task_list = sort_frames(task_list)
@@ -111,8 +109,6 @@ for i in range(len(task_list)):
         data['annotations'].append(temp_dict)
         break
 
-    next_key = int(first_key(task_list[i+1]['frames']))
-
     current_class = task['name']
     temp_task = task
     temp_i = i
@@ -120,7 +116,7 @@ for i in range(len(task_list)):
     #Constructs frames section of the new Darwin JSON
     if task["id"] != "NULL":
         temp_frame_dict = task['frames']
-        while temp_task['name'] == current_class:
+        while temp_task['name'] == current_class and temp_i != len(task_list)-1:
             if current_class == task_list[temp_i+1]["name"] and int(last_key(temp_frame_dict)) == int(first_key(task_list[temp_i+1]["frames"])) - 1:
                 next_task = task_list[temp_i+1]
                 last_temp = last_key(temp_frame_dict)
